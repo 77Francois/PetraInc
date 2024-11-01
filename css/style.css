@@ -267,6 +267,7 @@ body {
 
 .video-refrigeracion {
     padding-top: 4px;
+
 }
 
 /*********************************************************generadores industriales***************************************/
@@ -371,7 +372,7 @@ body {
     min-height: 60vh;
     margin-left: 2px;
     background-image: url(https://img.freepik.com/fotos-premium/estrategias-que-puedo-utilizar-ahorrar-energia-reducir-ia-generativa_1198230-107109.jpg?w=740);
-   
+       
 }
 
 .imagen_gen_dom {
@@ -510,13 +511,13 @@ body {
 }
 
 .footer_link h4 {
+    display: inline-block;
     font-size: 25px;
     color: #fff;
     margin-bottom: 25px;
-    font-weight: 500;
+    /* font-weight: 500; */
     border-bottom: 2px solid #176fa1;
     padding-bottom: 10px;
-    display: inline-block;
     transition: font-size 1s;
 } 
 
@@ -549,7 +550,7 @@ body {
     display: inline-block;
     min-height: 40px;
     width: 40px;
-    background-color: rgb(192, 189, 15);
+    background-color: rgb(16, 8, 60);
     margin: 0 10px 10px 0;
     text-align: center;
     line-height: 40px;
@@ -560,7 +561,7 @@ body {
 
 
 .redes_link a:hover {
-    background-color: #030629;
+    background-color: black;
 }
 /************************************************** boton volver ***************************************************************/
 .boton{
@@ -573,12 +574,113 @@ body {
     font-size: 45px; 
 }
 .boton a i{
-    border: rgb(80, 1, 1) solid 2px;
+    /* border: black solid 2px; */
     border-radius: 50%;
-    color: rgb(161, 11, 11);
+    color: black;
     cursor: pointer;
 } 
 .boton i:hover{
-    color: #270c15;
+    color: rgb(243, 6, 6);
 }
-/*************************************************inicio de media query************************************************************/
+/*********************************************************** Version para tablet *************************************************************/
+@media screen and (min-width: 600px) and (max-width: 1023px) {    /*Uso como referencia ipad pro*/ 
+
+    
+    #info_video {
+        background-color: orange;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        padding-left: 30px;
+    }
+    .video-refrigeracion iframe {
+       width: 390px;
+       height: 250px;
+    }
+    /**************************************************** Generadores industriales *********************************************/
+    .imagen_gen_ind {
+        background: rgb(182, 90, 90);
+        margin-bottom: 1em;
+        margin-top: 1em;
+        margin-left: 1em;
+        margin-right: 1em;
+        border-radius: 0px 6px 9px 14px;
+        width: 20%;
+        border: 2px solid rgb(67, 64, 64);
+    }
+    .imagen_gen_ind a figure img {
+        margin: 4px;
+        border: 0;
+        width: 94%;
+        max-height: 350px;
+        max-width: 350px;
+    }
+    .imagen_gen_ind > h2 {
+        width: 100%;
+        height: 50px;
+        background-color: rgb(40, 2, 2);
+        color: white;
+        text-align: center;
+        align-content: center;
+        font-size: 18px;
+    }
+    .referencia_producto{
+        font-size: 12px;
+    }
+    /**************************************************** Generadores domesticos *********************************************/
+    .generadores_dom {
+        /*es el contenedor de todas las imagenes mas info*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 35vh;
+        margin-left: 2px;
+        background-image: url(https://img.freepik.com/fotos-premium/estrategias-que-puedo-utilizar-ahorrar-energia-reducir-ia-generativa_1198230-107109.jpg?w=740);
+           
+    }
+    /***************************************************** UPS *******************************************************************/
+    .ups {
+        /*es el contenedor de todas las imagenes mas info*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 35vh;
+        margin-left: 2px;
+        background-image: url(https://sysracks.com/wp-content/uploads/2024/06/rack-19-pulgadas-medidas-1024x585.webp);
+       
+    }
+    /****************************************************************** Footer *******************************************************/
+    .footer_link {
+        width: 27%;
+        margin-left: 40px;
+        padding: 0 10px;
+    }
+    
+    .footer_link h4 {
+        display: inline-block;
+        font-size: 19px;
+        color: #fff;
+        margin-bottom: 25px;
+        /* font-weight: 500; */
+        border-bottom: 2px solid #176fa1;
+        padding-bottom: 10px;
+        transition: font-size 1s;
+    } 
+    
+    .footer_link h4:hover {
+        font-size: 25px;
+    }
+    .footer_link ul li a {
+        font-size: 16px;
+        text-decoration: none;
+        color: rgb(167, 176, 184);
+        display: block;
+        margin-bottom: 15px;
+        transition: all .3s ease;
+    }
+    
+    .footer_link ul li a:hover {
+        color: #f2e609;
+        padding-left: 6px;
+    }
+}
