@@ -562,4 +562,23 @@ body {
 .redes_link a:hover {
     background-color: #030629;
 }
+/************************************************** boton volver ***************************************************************/
+.boton{
+    position: fixed;  /*lo fijo a la posicion de 350px respecto del limite inferior*/
+    /*bottom: 320px;  lo elevo 350px ya que el pie de pagina tiene 300px */
+    bottom: 100px;
+    right: 50px;  /*lo alejo 50px del lateral derecho*/
+    height: 35px;
+    width: 35px;
+    font-size: 45px; 
+}
+.boton a i{
+    border: rgb(80, 1, 1) solid 2px;
+    border-radius: 50%;
+    color: rgb(161, 11, 11);
+    cursor: pointer;
+} 
+.boton i:hover{
+    color: #270c15;
+}
 /*************************************************inicio de media query************************************************************/
